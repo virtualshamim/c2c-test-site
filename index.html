@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Bike Repair · Bike service and repairs</title>
+  <meta name="description" content="Harbor Bike Repair: tune-ups, flat tyre repair, brake and gear service. Book a repair online.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Harbor Bike Repair</a>
+    <nav><a href="services.html">Services &amp; prices</a> <a href="book.html">Book a repair</a> <a href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Your bike, running like new</h1>
+      <p>Friendly bike repairs in the harbour district since 2019. Most repairs are done the same day.</p>
+      <p>
+        <a class="button" href="book.html">Book a repair</a>
+        <!-- Phase 27C JavaScript API: the shop's own buttons open the chat or ask for the visitor. -->
+        <button class="button light" type="button" onclick="c2c('ask', 'How much is a full tune-up?')">Ask about a tune-up</button>
+        <button class="button light" type="button" onclick="c2c('open')">Chat with us</button>
+      </p>
+    </section>
+    <section>
+      <h2>Why riders choose us</h2>
+      <ul>
+        <li>Qualified mechanics for road, city, mountain and e-bikes</li>
+        <li>Clear prices before we start: no surprises</li>
+        <li>30-day guarantee on all repairs</li>
+      </ul>
+    </section>
+  </main>
+  <footer>Harbor Bike Repair · 12 Pier Road · Open Tuesday to Saturday, 9:00–18:00 · <a href="privacy.html">Privacy</a></footer>
+  <!-- Calls before the chat loads wait in this queue. -->
+  <script>window.c2c = window.c2c || function () { (c2c.q = c2c.q || []).push(arguments); };</script>
+  <!-- Chat2Checkout: replace WIDGET_KEY with the test workspace's key after connecting. -->
+  <script src="https://chat2checkout.com/widget/v1.js" data-key="WIDGET_KEY" async></script>
+</body>
+</html>

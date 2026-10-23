@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://virtualshamim.github.io/c2c-test-site/sitemap.xml

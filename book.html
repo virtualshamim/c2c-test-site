@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a repair · Harbor Bike Repair</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Harbor Bike Repair</a>
+    <nav><a href="services.html">Services &amp; prices</a> <a href="book.html">Book a repair</a> <a href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <h1>Book a repair</h1>
+    <p>Tell us what your bike needs and when you'd like to drop it off. We confirm by phone or email within one working day.</p>
+    <!-- A test form on a static site: it doesn't send anywhere (the chat's own booking form is what we test). -->
+    <form onsubmit="event.preventDefault(); this.querySelector('output').textContent = 'Thanks! This is a test site, so nothing was sent.';">
+      <label>Name <input name="name" required></label>
+      <label>Phone or email <input name="contact" required></label>
+      <label>What needs doing? <textarea name="details" rows="3"></textarea></label>
+      <label>Preferred day <input name="day" type="date"></label>
+      <button class="button" type="submit">Send booking request</button>
+      <output></output>
+    </form>
+  </main>
+  <footer>Harbor Bike Repair · 12 Pier Road · Open Tuesday to Saturday, 9:00–18:00 · <a href="privacy.html">Privacy</a></footer>
+  <script>window.c2c = window.c2c || function () { (c2c.q = c2c.q || []).push(arguments); };</script>
+  <script src="https://chat2checkout.com/widget/v1.js" data-key="WIDGET_KEY" async></script>
+</body>
+</html>
